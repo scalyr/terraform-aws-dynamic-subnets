@@ -1,5 +1,5 @@
 module "nat_instance_label" {
-  source     = "git::https://github.com/cloudposse/terraform-null-label.git?ref=tf-0.14"
+  source     = "git::https://github.com/scalyr/terraform-null-label.git?ref=tf-0.14"
   context    = module.label.context
   attributes = distinct(compact(concat(module.label.attributes, ["nat", "instance"])))
 }
