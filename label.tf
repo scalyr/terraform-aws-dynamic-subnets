@@ -1,5 +1,5 @@
 module "label" {
-  source              = "git::https://github.com/scalyr/terraform-null-label.git?ref=tf-0.14"
+  source              = "git::https://github.com/scalyr/terraform-null-label.git?ref=0.16.0-scalyr2"
   attributes          = var.attributes
   namespace           = var.namespace
   environment         = var.environment
